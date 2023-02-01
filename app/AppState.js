@@ -1,5 +1,5 @@
 import { Car } from "./Models/Car.js"
-import { House } from "./Models/House"
+import { House } from "./Models/House.js"
 import { Value } from "./Models/Value.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
@@ -17,14 +17,18 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/House').House} */
   houses = [
     new House(
-      '1974',
-      'Mid-Century Modern Single Family Home',
-      3,
-      2.5,
-      1400,
-      375000, 
-      'Newly renovated mid-century modern home', 
-      'https://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg')
+    {
+      year: '1974',
+      name: 'Mid-Century Modern Single Family Home',
+      bedrooms: 3,
+      bathrooms: 2.5,
+      sqft: 1400,
+      price: 375000, 
+      description: 'Newly renovated mid-century modern home', 
+      imgUrl: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60'
+      
+    }
+  )
   ]
 
   /** @type {import('./Models/House').House} */
