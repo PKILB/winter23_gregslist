@@ -1,5 +1,5 @@
 import { appState } from "../AppState.js"
-import { setHTML } from "../Utils/Writer.js"
+import { setHTML, setText } from "../Utils/Writer.js"
 import { House } from "../Models/House.js"
 
 
@@ -27,6 +27,8 @@ export class HousesController {
 
   show(){
     // console.log('TODO houses')
+    setText('add-listing-button', '🏠 Need a house you Bum?')
+    setText('listingFormLabel', 'Say no more cause boy do we have the place for 🫵')
     _drawHouses()
   }
 
