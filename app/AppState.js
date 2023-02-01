@@ -28,6 +28,18 @@ class AppState extends EventEmitter {
       imgUrl: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60'
       
     }
+  ),
+  new House(
+    {
+      year: '1900',
+      name: 'Early 19th Century Modern Single Family Home',
+      bedrooms: 2,
+      bathrooms: 1.5,
+      sqft: 1050,
+      price: 175000, 
+      description: 'Mid-century modern home', 
+      imgUrl: 'https://images.unsplash.com/photo-1434082033009-b81d41d32e1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
+    }
   )
   ]
 

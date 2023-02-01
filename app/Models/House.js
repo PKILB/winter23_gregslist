@@ -20,7 +20,15 @@ export class House {
             <img
             src="${this.imgUrl}"
             alt="${this.name}" class="rounded">
-            <p><b>${this.name} ${this.sqft} - $${this.price}</b></p>
+            <div class="pt-3">
+            <div class="text-center">
+            <p>${this.name}</p>
+            </div>
+            <div class="px-2">
+            <p>Sq Ft: ${this.sqft}</p> 
+            <p><b>Price: $${this.price}</b></p>
+            </div>
+            </div>
         </div>
         </div>
         
